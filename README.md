@@ -1,5 +1,4 @@
 # TCP with Flow and Congestion Control
-======
 
 This project implements a TCP client and server using sliding window protocol for flow control and congestion control. For simplicity, client only sends sequence numbers instead of actual packets to the server and server responds with ACK numbers. Client adjusts the size of sliding window based on received ACKs. 
 Client probabilistically drops 1% of the packets. Server keeps track of the missing packets and client retransmits the dropped packets after a specific time.
